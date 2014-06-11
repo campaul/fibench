@@ -31,3 +31,12 @@ if hash python3 &> /dev/null; then
     python3 src/fib.py $1
 fi
 ```
+
+If you're using a compiled language, you will also need to add a shell script to the `build` directory that compiles your binary to the `bin` directory.
+
+```bash
+#!/usr/bin/bash
+
+mkdir -p bin/java
+javac src/fib.java -d bin/java
+```

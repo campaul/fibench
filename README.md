@@ -4,7 +4,7 @@
 
 ## Usage
 
-To run `fibench`, just do `./benchmark.sh`.
+To run `fibench` just do `./benchmark.sh <n>`, where `<n>` is the Fibonacci number to calculate.
 
 ## Adding a Language
 

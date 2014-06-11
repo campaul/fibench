@@ -38,5 +38,8 @@ If you're using a compiled language, you will also need to add a shell script to
 #!/usr/bin/bash
 
 mkdir -p bin/java
-javac src/fib.java -d bin/java
+
+if hash javac &> /dev/null; then
+  javac src/fib.java -d bin/java
+fi
 ```

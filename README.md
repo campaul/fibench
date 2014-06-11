@@ -40,6 +40,6 @@ If you're using a compiled language, you will also need to add a shell script to
 mkdir -p bin/java
 
 if hash javac &> /dev/null; then
-  javac src/fib.java -d bin/java
+    javac src/fib.java -d bin/java
 fi
 ```

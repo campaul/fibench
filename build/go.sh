@@ -7,7 +7,7 @@ cp src/fib.go src/fib/
 if hash go &> /dev/null; then
 	GOPATH=$PWD
     go build fib
-	cp fib bin/go/
+	mv fib bin/go/
 fi
 
 rm -r src/fib/

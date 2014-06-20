@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 
-if hash go &> /dev/null; then
-	go run src/fib.go $1
+if hash bin/go/fib &> /dev/null; then
+	bin/go/fib $1
 fi
